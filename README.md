@@ -1,6 +1,6 @@
 # Ansible Role: Swap
 
-[![CI](https://github.com/shaneholloman-org/ansible-role-swap/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman-org/ansible-role-swap/actions/workflows/ci.yml)
+[![CI](https://github.com/shaneholloman/ansible-role-swap/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-swap/actions/workflows/ci.yml)
 
 An Ansible Role that configures swap space on Linux.
 
@@ -53,4 +53,3 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2023
-
