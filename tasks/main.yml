@@ -1,14 +1,18 @@
 ---
 - name: Manage swap file entry in fstab.
-  mount:
+  ansible.posix.mount:
     name: none
     src: "{{ swap_file_path }}"
     fstype: swap
     opts: sw
     state: "{{ swap_file_state }}"
 
-- include_tasks: disable.yml
+- name: Disable tasks
+  ansible.builtin.include_tasks:
+    file: disable.yml
   when: swap_file_state == 'absent'
 
-- include_tasks: enable.yml
+- name: Include enable tasks
+  ansible.builtin.include_tasks:
+    file: enable.yml
   when: swap_file_state == 'present'

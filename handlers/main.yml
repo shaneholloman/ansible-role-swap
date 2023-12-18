@@ -1,0 +1,11 @@
+---
+- name: Run swapon on the swap file.
+  changed_when: false
+  ansible.builtin.command: swapon {{ swap_file_path }}
+  listen: Run swapon
+
+- name: Make swap file
+  ansible.builtin.command:
+    cmd: mkswap {{ swap_file_path }}
+    creates: "{{ swap_file_path }}"
+  listen: Make swap file
