@@ -1,14 +1,12 @@
 ---
-dependencies: []
-
 galaxy_info:
   role_name: swap
   author: shaneholloman
   description: Swap file and swap management for Linux.
-  issue_tracker_url: https://github.com/shaneholloman/ansible-role-swap/issues
   company: "shaneholloman"
   license: "license (Unlicense)"
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
+
   platforms:
     - name: Debian
       versions:
@@ -16,6 +14,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
+
   galaxy_tags:
     - system
     - server
@@ -25,3 +24,5 @@ galaxy_info:
     - performance
     - memory
     - ram
+
+dependencies: []
