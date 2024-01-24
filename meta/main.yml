@@ -7,7 +7,7 @@ galaxy_info:
   description: Swap file and swap management for Linux.
   issue_tracker_url: https://github.com/shaneholloman/ansible-role-swap/issues
   company: "shaneholloman"
-  license: "license (BSD, MIT)"
+  license: "license (Unlicense)"
   min_ansible_version: "2.10"
   platforms:
     - name: Debian
